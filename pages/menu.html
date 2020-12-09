@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Menu Restaurante Cuscatleco</title>
+            <!-- adactacion a   otros dispositivos  --> 
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+              <!-- cdn de iconos de fontwesome --> 
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+      <!-- libreria de animate css --> 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://kit.fontawesome.com/c225917b3f.js" crossorigin="anonymous"></script>
+       
+        <link rel="stylesheet" href="../css/bootstrap.min.css">      <!-- estilo de bootstrap -->  
+
+        <link rel="stylesheet" href="../css/style.css">       <!-- estilo propio --> 
+        <!-- ----------------------------link mediante la cdn de bosstra---------------- -->
+
+       
+       <!--iniciamos el modal 
+         <script >$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})</script>-->
+
+    </head>
+    <body>
+       
+            <nav  id="menu" class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top bg-inverse">  
+                <div class="  container container-fluid">   
+                    <a class="navbar-brand" href="">  
+                        <img  src="../img/logo/logo1.png" alt="" width="90">
+
+                    </a> 
+                    <button class="navbar-toggler"  
+                            type="button" 
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" 
+                            aira-expanded="false" 
+                            aria-label="Toogle navigation">  
+                        <span class="navbar-toggler-icon"></span>
+                    </button>  
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" >  
+                    <ul class="navbar-nav ml-auto"> 
+                        <li class="navbar-item"><a class="nav-link" href="../index.html">INICIO</a></li> 
+                        <li class="navbar-item"><a class="nav-link" href="menu.html">MENU</a></li> 
+                        <li class="navbar-item"><a class="nav-link" href="nosotros.html">HISTORIA</a></li> 
+                        <li class="navnbar-item"><a class="nav-link" href="sucursales.html">SUCURSALES</a></li> 
+                        <li class="navbar-item"><a class="nav-link" href="reservar.html">RESERVAR</a></li> 
+                    </ul>
+                </div>   
+
+
+                </div>
+
+
+            </nav>
+        
+
+   <header>
+
+       
+
+            <div class="card3">
+
+                <img src="../img/acompañamientos/ensalada.jpg" alt="" class="card3-imagen">
+                
+                <img src="../img/acompañamientos/ensalada2.jpg" alt="" class="card3-imagen2">
+
+            </div>
+       
+
+       </header>
+
+
+
+                      <!-- boton flotante de whatsapp-->  
+        <a href="https://api.whatsapp.com/send?phone=50371381006&text=Hola!%20%20puedes%20hacer%20tu%20pedido%20por%20este%20medio%20te%20atenderemos%20%20rapidamente." class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>  <!-- ceramos el  flotante de whatsapp-->  
+
+ <section  class="   menu_1">
+
+            <div class="  container">  
+
+            <div class="contenedor3  d-flex flex-column align-items-center ">
+                      
+                <div class="informacion"> <!--div contenedor de los div info-->
+                    <!--Tarjeta 1-->
+                    <div class="info">
+                        <h1>
+                            Historia.
+                        </h1>
+
+                        <p> Nuestro restaurante se fundo en el año  2000, por tres personas que emigraron al extrangero, que tuvieron la idea de hacer este proyecto, con el pasar del tiempo, estamos renovando  y haciedo mas platos y tipicos , para que nuestro clientes este sastifechos.
+                        </p>
+                      
+
+                    </div>
+
+                  
+                    <div class="info"> <!--Tarjeta 2-->
+
+                        <img src="../img/postre/cake.jpg" >
+
+                    </div>
+
+                  
+
+                </div>
+            </div>
+             </div>
+        </section>
+
+        <section class="  menu_1"> 
+     <div class="  container">  
+        <!--Contenedor2 -->
+        <div class="contenedor2">
+            <h2>Nuestro Menu.</h2>
+          
+            <div class ="tarjetass "><!-- se crea otro contenedor para poder manejar las medidas de dispositivos el cual se llama targetass-->
+                <!--Tarjeta1 -->
+                <div class="tarjeta">
+                <img src="../img/entradas/entrada.jpg">
+                    <h3>  <b>Entradas.</b></h3>
+                      <button type="button" class="btn1" data-toggle="modal" data-target="#modal1">
+                   Mas Entradas. </button>
+                      <!--boton para el modal  -->
+
+                     </div>
+                <!--Tarjeta2 -->
+                    <div class="tarjeta   wow animate__animated animate__backInUp    animate-duration: 4s">
+                          <a href="./menu/mariscos.html"><img src="../img/mariscos/marisco2.jpg"></a>
+                    <h3>Mariscos.</h3>
+
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal2">
+                     Mas Mariscos. </button>
+                      <!--boton para el modal -->
+                </div>
+
+
+                <!--Tarjeta3 -->
+                <div class="tarjeta">
+                   <img src="../img/bebidas/bebida.jpg">
+                    <h3>Bebidas.</h3>
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal3">
+                       Mas Bebidas. </button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+                </div>
+                <!--Tarjeta4 -->
+                <div class="tarjeta">
+                    <img src="../img/postre/postre3.jpg">
+                    <h3>Postres.</h3>
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal4">
+                   Mas Postres. </button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+                </div>
+                <!--Tarjeta5 -->
+                <div class="tarjeta">
+                   <img src="../img/carnes/carne.jpg">
+                    <h3>Carnes </h3>
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal5">
+                     Carnes </button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+
+                </div>
+                <!--Tarjeta6 -->
+                <div class="tarjeta">
+                    <img src="../img/desayunos/desayuno1.jpg"> 
+                    <h3>Desayunos.</h3>
+
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal6">
+                     Mas Desayunos.</button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+
+                </div>
+
+                <!--Tarjeta7 -->
+
+                <div class="tarjeta">
+                    <img src="../img/almuerzos/arroz.jpg">
+                    <h3>Almuerzos.</h3>
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal7">
+                     Mas Almuerzos. </button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+
+                  
+                </div>
+
+        
+
+
+                <!--Tarjeta8 -->
+                <div class="tarjeta">
+
+                    <img src="../img/acompañamientos/nachos.jpg">
+                    <h3>Acompañamiento.</h3>
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal8">
+                      Mas acompañamiento. </button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+                </div>
+
+
+
+                  <div class="tarjeta">
+
+                    <img src="../img/vinos/vino1.jpg">
+                    <h3>Vinos.</h3>
+                    <button type="button" class="btn1" data-toggle="modal" data-target="#modal9">
+                      Mas vinos. </button>
+                      <!--boton paara el modal tiene que agrgarle  en data-target y en el modal tienes que poner id sin el # el mismo nombre -->
+                </div>
+
+            </div><!--Cierra el div de tarjetass -->
+        </div><!--Cierra el div del contenedor2-->
+<!-- Button trigger modal -->
+</div>
+</section>
+
+
+      <footer class=" page-footer font-small pt-4 bg-dark text-white">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Descripción</h5>
+        <p id="foot-content">Esta página web fue realizada a través del frankework de boostrap en su última versión, por estudiantes de la asignatura de Internet I</p>
+
+      </div>
+   
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Integrantes</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="">Jimy Ronal Soriano Garcia
+          </li>
+          <li>
+            <a href="#">José Cruz Zabaleta Cerén</a>
+          </li>
+          <li>
+            <a href="#">Anderson Fernando Argueta Jovel</a>
+          </li>
+    
+        </ul>
+
+      </div>
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Redes Sociales</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" ><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-reddit"></i></a>
+          </li>
+        </ul>
+
+      </div>
+      <div class=" contacto col-md-4 mx-auto">
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-center">Contactenos</h5>
+                    <form>
+                        <input type="text" placeholder="Ingresa su nombre">
+                        <input type="email" placeholder="Ingresa su email">
+                        <input type="number" placeholder="Ingrese su numero de telefono">
+
+                        <button class="btn3"> ENVIAR</button>
+                    </form>
+     </div>
+      <!-- Grid column -->
+
+    </div>
+  </div>
+  <!--Linea de abajo-->
+    <div class="navar-body2 text-center py-3">Todos los derechos reservados|
+    <a href="index.html"> restaurante</a>
+  </div>        
+</footer>  
+   <script src="../js/jquery-3.5.1.min.js"></script>       <!-- jquery javascript --> 
+        <script src="../js/bootstrap.min.js"></script>
+
+    
+        <!-- script de js  libreria de animacion de escroll -->
+        <script  src="../js/wow.min.js" type="text/JavaScript"></script>
+   <!-- iniciamos el  script de js  de la libreria de animacion de escroll -->
+     <script >
+         new WOW().init();
+     </script>
+
+    </body>
+
+
+</html>
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+<!-- -----------------------------------------------modales---------------------------------------------------->
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++modal1+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class=" overflow modal fade modal-dialog modal-dialog-scrollable"id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true ">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entradas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+      <a href="https://api.whatsapp.com/send?phone=50371381006&text=Hola!%20%20puedes%20hacer%20tu%20pedido%20por%20este%20medio%20te%20atenderemos%20%20rapidamente." class="float" target="_blank">
+   <i class="fa fa-whatsapp my-float"></i>
+   </a>
+
+        <!-- primera targeta-->
+      <div class="card mb-3  col-12" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src="../img/entradas/entrada1.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+          <div class=" col-6 col-md-6 "><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-info text-center">Flor de izote con huevo</h5>
+                    <p class="card-text   text-center"> Flor de izote, huevo, cebolla,chile</p>
+                    <h6 class=" text-center "> <b>Precio $1 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+    
+
+    <!-- primera targeta-->
+  <div class="card mb-3  col-12 col-md-12" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/entradas/entrada2.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+              <div class="card-body"><!-- div del las letras-->
+                    <h5 class="card-title text-info text-center">Sopa de Mora</h5>
+                    <p class="card-text   text-center"> Mora y  verduras.</p>
+                  <h6 class=" text-center "> <b>Precio $1 </b></h6>
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+            <!-- primera targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/entradas/entrada3.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+              <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title   text-center text-info">Entremés de pepino y granola</h5>
+                    <p class="card-text  text-sm-center"> Pepino,granolas,papayas y limon.</p>
+                    <h6 class=" text-center "> <b>Precio $1 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal-->   
+
+
+
+   <!-- quinta targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/entradas/entrada5.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Papas con eneldo y mostaza</h5>
+                    <p class="card-text  text-sm-center"> Papas blancas, yogur natural  y mayonesa.</p>
+                    <h6 class=" text-center "> <b>Precio $1 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+
+            <!-- sexta tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/entradas/entrada6.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Brocheta</h5>
+                    <p class="card-text  text-sm-center"> Carne de ternera champiñones, chile, piña.</p>
+                    <h6 class="text-center"> <b>Precio $5  </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+
+  </div> <!-- cierra el div del cuerpo del modal--> 
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++modal2+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Mariscos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+
+        <!-- primera targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/mariscos/marisco4.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                 <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title   text-center text-info">Mariscada salvadoreña</h5>
+                    <p class="card-text  text-sm-center">Colas de langostas, camarones,pescados verduras y limon  .</p>
+                    <h6 class=" text-center "> <b>Precio $5 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+
+
+
+    <!-- segunda targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/mariscos/marisco2.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title text-info text-center">Pescado frito</h5>
+                    <p class="card-text   text-center"> Pescado entero, ensalada fresca papas y limon.</p>
+                  <h6 class=" text-center "> <b>Precio $2.50 </b></h6>
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal-->
+
+
+  <!-- tercera targeta-->
+             <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/mariscos/marisco1.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-info text-center">Croquetas de pescado.</h5>
+                    <p class="card-text   text-center">  Filetes de pescado, papas, cebolla y chile.</p>
+                    <h6 class=" text-center "> <b>Precio $1.50 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+         <!-- CUARTA tarjeta -->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- dv de la imagen-->
+            <img src=" ../img/mariscos/marisco6.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+      
+                      <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+      
+                        <div class="card-body"><!-- div del las letras-->
+      
+                          <h5 class="card-title   text-info  text-center">Cebiche de camaron mixto.</h5>
+                          <p class="card-text  text-sm-center">Camaron, chile, cebolla, jaiba, concha, langosta, cilantro y limon.</p>
+                          <h6 class=" text-center"> <b> Precio $12.0 </b></h6>
+                      
+                        </div><!--  cierra el div del las letras-->
+                   </div><!-- cierrra el div del  ciuerpo de la targeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la targeta horizontal--> 
+
+               <!-- primera targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- dv de la imagen-->
+            <img src=" ../img/mariscos/marisco7.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+      
+                      <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+      
+                        <div class="card-body"><!-- div del las letras-->
+      
+                          <h5 class="card-title text-center  text-info"> Conchas </h5>
+                          <p class="card-text  text-sm-center">Limon , salsa inglesa, sal Y salsa picante.</p>
+                          <h6  class=" text-center"><b> precio $5  </b></h6>
+                      
+                        </div><!--  cierra el div del las letras-->
+                   </div><!-- cierrra el div del  ciuerpo de la targeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la targeta horizontal--> 
+      
+        
+
+
+
+
+  </div> <!-- cierra el div del cuerpo del modal--> 
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++moda3+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bebidas Frias y Calientes </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+
+
+        <!-- primera targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/bebidas/imagen1.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title text-center text-info">Agua de jamaica</h5>
+                    <p class="card-text  text-sm-center">La flor de Jamaica.</p>
+                    <h6 class=" text-center"> <b> Precio $0.75 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+       
+ 
+    <!-- primera targeta-->
+    <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+      <div class="row no-gutters"><!-- otro div-->
+        <div class="col-md-6  col-6"><!-- dv de la imagen-->
+          <img src=" ../img/bebidas/cafe.jpg"class="card-img" alt="...">
+        </div><!-- cierra div de la imagen-->
+    
+                    <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+    
+                      <div class="card-body"><!-- div del las letras-->
+    
+                        <h5 class="card-title  text-center text-info">Cafe negro de la casa</h5>
+                        <p class="card-text  text-sm-center">Cafe negro con refil.</p>
+                        <h6  class=" text-center"> <b>  Precio $5 </b> </h6>
+                    
+                      </div><!--  cierra el div del las letras-->
+                 </div><!-- cierrra el div del  ciuerpo de la targeta-->
+             </div><!-- cierra el  otro div-->
+            </div>  <!-- cierra el div de la targeta horizontal--> 
+                <!-- primera targeta-->
+
+    <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+      <div class="row no-gutters"><!-- otro div-->
+        <div class="col-md-6  col-6"><!-- dv de la imagen-->
+          <img src=" ../img/bebidas/imagen2.jpg"class="card-img" alt="...">
+        </div><!-- cierra div de la imagen-->
+    
+                    <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+    
+                      <div class="card-body"><!-- div del las letras-->
+    
+                        <h5 class="card-title  text-center text-info">Atol de maíz tostado </h5>
+                        <p class="card-text  text-sm-center">Maiz, leche, azucar y canela.</p>
+                        <h6  class=" text-center"><b> Precio $1.25 </b></h6>
+                    
+                      </div><!--  cierra el div del las letras-->
+                 </div><!-- cierrra el div del  ciuerpo de la targeta-->
+             </div><!-- cierra el  otro div-->
+            </div>  <!-- cierra el div de la targeta horizontal--> 
+             
+                <!-- primera targeta-->
+    <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+      <div class="row no-gutters"><!-- otro div-->
+        <div class="col-md-6  col-6"><!-- dv de la imagen-->
+          <img src=" ../img/bebidas/bebidad1.jpg"class="card-img" alt="...">
+        </div><!-- cierra div de la imagen-->
+    
+                    <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+    
+                      <div class="card-body"><!-- div del las letras-->
+    
+                        <h5 class="card-title text-center text-info">Fresco de carao</h5>
+                        <p class="card-text  text-sm-center"> Caraos y azúcar .</p>
+                        <h6 class=" text-center"><b> Precio $.75 </b></h6>
+                    
+                      </div><!--  cierra el div del las letras-->
+                 </div><!-- cierrra el div del  ciuerpo de la targeta-->
+             </div><!-- cierra el  otro div-->
+            </div>  <!-- cierra el div de la targeta horizontal--> 
+
+                <!-- primera targeta-->
+    <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+      <div class="row no-gutters"><!-- otro div-->
+        <div class="col-md-6  col-6"><!-- dv de la imagen-->
+          <img src=" ../img/bebidas/teverde.jpg"class="card-img" alt="...">
+        </div><!-- cierra div de la imagen-->
+
+                    <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+    
+                      <div class="card-body"><!-- div del las letras-->
+    
+                        <h5 class="card-title text-center text-info">Te verde</h5>
+                        <p class="card-text  text-sm-center">Te de manzana con refil.</p>
+                        <h6 class=" text-center"> <b> Precio $1.25 </b></h6>
+                    
+                      </div><!--  cierra el div del las letras-->
+                 </div><!-- cierrra el div del  ciuerpo de la targeta-->
+             </div><!-- cierra el  otro div-->
+            </div>  <!-- cierra el div de la targeta horizontal--> 
+ 
+  </div> <!-- cierra el div del cuerpo del modal--> 
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++modal4+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Postres</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+
+        <!-- primera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/postre/postre3.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title text-center text-info">Tarta de manzana</h5>
+                    <p class="card-text  text-sm-center">Relleno de manzana, leche, canela,azucar.</p>
+                    <h6 class=" text-center"> <b>Precio $8.0 </b></h6>
+                
+                  </div><!--  cierra el div de las letras-->
+             </div><!-- cierra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+
+                <!-- segunda targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- div de la imagen-->
+            <img src=" ../img/postre/postre4.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+                      <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+                        <div class="card-body"><!-- div del las letras-->
+                          <h5 class="card-title  text-center  text-info">Tartaleta mixta</h5>
+                          <p class="card-text  text-sm-center">Relleno de kiwi, melocoton, fresa .</p>
+                          <h6 class=" text-center"><b> Precio $8.0 </b></h6>
+                      
+                        </div><!--  cierra el div de las letras-->
+                   </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la tarjeta horizontal-->
+
+
+                      <!-- tercera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- div de la imagen-->
+            <img src=" ../img/postre/postre1.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+      
+                      <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+      
+                        <div class="card-body"><!-- div del las letras-->
+      
+                          <h5 class="card-title text-center  text-info">Budín</h5>
+                          <p class="card-text  text-sm-center"> Pan, leche  y guineos.</p>
+                          <h6 class=" text-center"> <b>Precio $1.50  </b></h6>
+                        </div><!--  cierra el div de  las letras-->
+                   </div><!-- cierrra el div del  ciuerpo de la tarJeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la tarJeta horizontal-->
+
+                      <!-- Cuarta targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- div de la imagen-->
+            <img src=" ../img/postre/ayote.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+                      <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+                        <div class="card-body"><!-- div del las letras-->
+                          <h5 class="card-title  text-center  text-info">Ayote en miel</h5>
+                          <p class="card-text  text-sm-center">Ayote en miel de dulce, con canela.</p>
+                          <h6  class=" text-center"> <b> Precio $1.0 </b></h6>
+                      
+                        </div><!--  cierra el div del las letras-->
+                   </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la tarjeta horizontal-->
+  </div> <!-- cierra el div del cuerpo del modal--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++modal4+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Carnes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+
+        <!-- primera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/carnes/img1.jpEg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+                  <div class="card-body"><!-- div de las letras-->
+                    <h5 class="card-title text-center  text-info">Carne Guisada</h5>
+                    <p class="card-text  text-sm-center">Arroz, carne guisada, con verduras, y aguacate.</p>
+                    <h6 class=" text-center">  <b> Precio $3.50  </b></h6>
+                  </div><!--  cierra el div de las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+
+
+                <!-- segunda targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- div de la imagen-->
+            <img src=" ../img/carnes/img2.jpeg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+                      <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+                        <div class="card-body"><!-- div del las letras-->
+                          <h5 class="card-title text-center  text-info">Carne molida</h5>
+                          <p class="card-text  text-sm-center">Crne molida aderezada, arroz,verduras.</p>
+                          <h6 class=" text-center"> Precio $1.50</h6>
+                        </div><!--  cierra el div de las letras-->
+                   </div><!-- cierra el div del  cuerpo de la tarjeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la tarjeta horizontal-->
+
+ <!-- tercera targeta-->
+
+                 <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/carnes/carne3.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+                  <div class="card-body"><!-- div del las letras-->
+                    <h5 class="card-title text-info text-center"> Bistec encebollado</h5>
+                    <p class="card-text text-center">Rico plato al estilo Salvadoreño.</p>
+                  <h6 class=" text-center "> <b>Precio $3 </b></h6>
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+  
+ <!-- tercera targeta-->
+
+                 <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/carnes/img3.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+                  <div class="card-body"><!-- div del las letras-->
+                    <h5 class="card-title text-info text-center">Carne con  zucchini</h5>
+                    <p class="card-text text-center">Carne sazonada con hierbas, y zucchini.</p>
+                  <h6 class=" text-center "> <b>Precio $5 </b></h6>
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+  </div> <!-- cierra el div del cuerpo del modal--> 
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+     
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++modal6+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Desayunos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+
+        <!-- primera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/desayunos/desayuno.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+                  <div class="card-body"><!-- div del las letras-->
+                    <h5 class="card-title   text-center  text-info">Desayuno</h5>
+                    <p class="card-text  text-sm-center">Huevo estrellados, 2 salchichas , pan y cafe refil</p>
+                    <h6 class=" text-center">  <b> Precio $2.50 </b></h6>
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal-->
+
+    <!-- primera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/desayunos/desayuno2.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+                  <div class="card-body"><!-- div del las letras-->
+                    <h5 class="card-title   text-center  text-info">Desayuno2</h5>
+                    <p class="card-text  text-sm-center">Huevo frito, frijoles fritos, crema y queso fresco. </p>
+                    <h6 class=" text-center">  <b> Precio $2.50 </b></h6>
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal-->
+
+         <!-- segunda  tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- div de la imagen-->
+            <img src=" ../img/desayunos/pan cakes.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+                      <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+                        <div class="card-body"><!-- div de  las letras-->
+                          <h5 class="card-title   text-center  text-info">Pan cakes</h5>
+                          <p class="card-text  text-sm-center"> 3 pan cakes con fresa y miel de maple.</p>
+                          <h6  class=" text-center"> <b> Precio $2.50  </b></h6>
+                        </div><!--  cierra el div de las letras-->
+                   </div><!-- cierrra el div del  cuerpo de la tarJeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la targeta horizontal--> 
+
+
+      
+         <!--Tercera tarJeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+        <div class="row no-gutters"><!-- otro div-->
+          <div class="col-md-6  col-6"><!-- dv de la imagen-->
+            <img src=" ../img/desayunos/croasant.jpg"class="card-img" alt="...">
+          </div><!-- cierra div de la imagen-->
+                      <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+                        <div class="card-body"><!-- div del las letras-->
+                          <h5 class="card-title  text-center  text-info">Croasant sandwich</h5>
+                          <p class="card-text  text-sm-center">Jamon o tocino.</p>
+                          <h6 class=" text-center">  <b> Precio $4.50 </b></h6>
+                      
+                        </div><!--  cierra el div de las letras-->
+                   </div><!-- cierra el div del  cuerpo de la tarjeta-->
+               </div><!-- cierra el  otro div-->
+              </div>  <!-- cierra el div de la tarjeta horizontal-->
+  </div> <!-- cierra el div del cuerpo del modal--> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++modal7+++++++++++++++++++++++++++++++++++++++l1" -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Almuerzos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+  
+          <!-- primera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/almuerzos/pollo.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div de  las letras-->
+
+                    <h5 class="card-title text-center  text-info">Pollo a la plancha </h5>
+                    <p class="card-text  text-sm-center"> Pechugas de pollo a la plancha, arroz, ensalada.</p>
+                    <h6 class=" text-center"><b> Precio $4.0 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+
+          <!-- segunda targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/almuerzos/almuerzo5.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Berenjenas  Gratinadas</h5>
+                    <p class="card-text  text-sm-center">Berenjenas gratinadas, rellenas de queso, arroz, con tomate.</p>
+                    <h6  class=" text-center"><b> Precio $2.50 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+
+          <!-- tercera targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/almuerzos/img3.jpeg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div de las letras-->
+
+                    <h5 class="card-title   text-center  text-info">Pescado frito</h5>
+                    <p class="card-text  text-sm-center"> Pescado, arroz o casamiento, + ensalada .</p>
+                    <h6 class=" text-center"><b> Precio $4.0 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+
+          <!-- cuarta tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- div de la imagen-->
+      <img src=" ../img/almuerzos/img4.jpeg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Sopa gallina india</h5>
+                    <p class="card-text  text-sm-center">Sopa de gallina, arroz + acompamiento</p>
+                    <h6 class=" text-center"> <b> Precio $10.0 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+
+          <!-- Quinta tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/almuerzos/almuerzo2.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Rellenos de repollo</h5>
+                    <p class="card-text  text-sm-center">Rellenos de repollo, con queso, arroz, ensalda.</p>
+                    <h6 class=" text-center"> <b> Precio $2.0 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+
+  </div> <!-- cierra el div del cuerpo del modal--> 
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++8++++++++++++++++++++++++++++++++++++++++++ -->
+<div class="modal fade modal-dialog modal-dialog-scrollable"id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Acompañamientos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+     <div class="modal-body "><!-- cuerpo del modal" -->
+
+        <!-- primera targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la targeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6  col-6"><!-- dv de la imagen-->
+      <img src=" ../img/acompañamientos/ensalada2.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6 col-6"><!-- div del  ciuerpo de la targeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Ensalada Mixta  </h5>
+                    <p class="card-text  text-sm-center">Brocoli salcochado, carne, zanahoria, champiñones,pimienta.</p>
+                    <h6 class=" text-center"> <b>  Precio $5 </b> </h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+      
+          <!-- segunda  tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6"><!-- div de la imagen-->
+      <img src=" ../img/acompañamientos/ensaladarusa.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6"><!-- div del  ciuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div de las letras-->
+
+                    <h5 class="card-title text-center  text-info">Ensalada de esparragos</h5>
+                    <p class="card-text  text-sm-center">esparragos al vapor, huevo duro, tomate.</p>
+                    <h6 class=" text-center">   <b> Precio $5  </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+    <!-- tercera tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6"><!-- div de la imagen-->
+      <img src=" ../img/acompañamientos/ensaladarusa.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div del las letras-->
+
+                    <h5 class="card-title  text-center  text-info">Ensalda rusa</h5>
+                    <p class="card-text  text-sm-center">Remolacha, papa, cilantro, mayonesa.</p>
+                    <h6 class=" text-center"> <b> Precio $2 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal--> 
+
+    <!-- cuarta tarjeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6"><!-- div de las imagen-->
+      <img src=" ../img/acompañamientos/ensaladadecodiitos.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div de las letras-->
+
+                    <h5 class="card-title text-center  text-info">Ensalada de coditos</h5>
+                    <p class="card-text  text-sm-center">Coditos, mayonesa ligth, cilantro.</p>
+                    <h6 class=" text-center"> <b> Precio $2.50 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  cuerpo de la tarjeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la tarjeta horizontal-->
+
+
+    
+
+
+    <!-- Quinta targeta-->
+      <div class="card mb-3" style="max-width: 540px;"><!-- div  de la tarjeta horizontal-->
+  <div class="row no-gutters"><!-- otro div-->
+    <div class="col-md-6"><!-- div de la imagen-->
+      <img src=" ../img/acompañamientos/chimole.jpg"class="card-img" alt="...">
+    </div><!-- cierra div de la imagen-->
+
+                <div class="col-md-6"><!-- div del  cuerpo de la tarjeta-->
+
+                  <div class="card-body"><!-- div de las letras-->
+
+                    <h5 class="card-title text-center  text-info">Chimole</h5>
+                    <p class="card-text  text-sm-center">Cebolla, tomate, chile verde, cilantro, limon pimineta molida.</p>
+                    <h6 class=" text-center">  <b> Precio $1.0 </b></h6>
+                
+                  </div><!--  cierra el div del las letras-->
+             </div><!-- cierrra el div del  ciuerpo de la targeta-->
+         </div><!-- cierra el  otro div-->
+        </div>  <!-- cierra el div de la targeta horizontal--> 
+
+
+  </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
