@@ -1,0 +1,1241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Josefin+Slab:wght@200&family=Niconne&family=Noto+Serif:wght@700&family=Pinyon+Script&family=Poiret+One&family=Roboto:wght@100&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{  
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+} 
+
+h1,h2,h3,h4,h5,h6{  
+  font-family: 'Noto Serif', serif;   
+} 
+
+.letra-carrousel{  
+    font-family: 'Cormorant Garamond', serif;
+} 
+
+p{  
+font-family: 'Poiret One', cursive;
+} 
+
+a{  
+font-family: 'Poiret One', cursive;
+} 
+
+
+.redondo{  
+background-color: azure;} 
+
+
+.contenedor-video video{  
+    width: 100%;
+    padding-right:25px;
+    padding-left: 25px;
+    height: auto;
+} 
+
+/* unicio del estilo para el boton flotante de whatssap*/
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+    margin-top:16px;
+}
+/* fin de estilo paara el boton flotante de whasatp*/ 
+
+.card-border{   
+    border-radius: 20px;
+    overflow: hidden; 
+    transition: all ease-out 0.2s;  
+} 
+.modalimg
+{   
+   height: 150px;
+   width: 150px;  
+} 
+
+
+.card-border img
+{   
+    height: 220px;  
+} 
+/*
+.card-border:before{    
+     border: solid 10px black;
+       opacity: 0.3;
+       content: "";
+} */  
+.card-border:hover{    
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: scale(1.05); 
+}   
+
+.container { 
+    text-align: center;
+} 
+
+/*Imagen de fondo*/
+.fondo{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../img/fondo/restaurante1.png); 
+     background-size: cover; 
+    display:flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;  
+}
+
+
+/*antes del fondo*/
+.fondo:before{
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: #A9A9A9;
+    position: absolute;
+    opacity: 0.3;
+}/*la etiqueta h2 del fondo*/
+
+
+.fondo h2{
+    position: relative;
+    color:white ;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.letrafondo{/* para el area de reservar la letra*/
+    position: relative;
+    color:white ;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+.fondo a{
+    position: relative;}
+
+.letrafondo2{/* para el area de reservar la letra*/
+    color:white ;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+}
+
+
+#foot-content{  
+    text-align: left; 
+}
+/*..................................................*/
+.card3{/* para el estilo del aarchivo menu en el fondo*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E6FA;
+    margin: 2rem 0;
+  
+}
+ .card3-imagen{ /*estilo de la imagen donde se ve el circulo enmedio, es la del fondo en el menu*/
+    width: 100%;
+    height: 38rem;
+    object-fit: cover;
+
+   
+}
+.card3-imagen2{/*la imagen circular de enmedio en el menu*/
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -8rem; 
+    z-index:999;
+    /*..................................................*/
+}
+/*Estilo  para las targetas del menu contenedor2 */
+.contenedor2{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     background-color:#E6E6FA;
+        padding-bottom: 0px; /* cambiado*/
+}
+
+/*estilo a titulo h2,del contenedor dos*/
+.contenedor2 h2{
+    text-align: center;
+    font-size: 40px; 
+    padding-bottom: 20px;
+
+}
+/*estilo a titulo h3, y parrafo del contenedor dos*/
+.contenedor2 h3{
+    text-align: center;
+    margin-top: 10px;  
+}
+
+.contenedor2 p{
+    text-align: center;
+    margin-top: 10px;  
+   
+}
+
+/*Estilo a las tarjetas*/
+.tarjeta{/*donde se muetran la img del menu*/
+    width: 308px;
+    height: 330px;
+    margin-top: 20px;
+    margin:15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border:solid  1px black;
+    background-color: white;
+     border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);/*una sobra*/
+    cursor: default;
+    transition: all 400ms ease;/*se mueve todo el contonedor de  targeta*/
+}
+/*estilo a la imagen del contenedor de targeta*/
+  .tarjeta img{/* tamaño de la img dentro de la clase targeta*/
+        width: 100%;
+        height: 220px; 
+}
+
+ .tarjeta h3{/* tamaño de la img dentro de la clase targeta*/
+}
+/*es cuando pasas el mause en el contonedor de la targeta*/
+.tarjeta:hover {
+        box-shadow: 5px 5px 20px rgba(19,19,209,0.6);
+        transform: translateY(-2%);/*se mueve hacia arriba en y*/
+   }
+/*Estilo del boton*/
+.btn1{
+    margin-top: 1px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    background-color:#B0C4DE;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+/*cambio del boton al pasar el mause*/
+.btn1:hover{
+    background-color:#E6E6FA;
+}
+/*para cambiar a la etiqueta a */
+.tarjeta a {
+    text-decoration: none;/*se le quita el subrayado*/
+    color:white;
+}
+/*..................................................*/
+/*Contenedor3*/
+.contenedor3{/*contenedor de las targetas inmediatamente despues de la img circulara de enmedio /
+    padding-bottom: 1px;
+    /*margin-top: 40px;*/
+    background-color: #E6E6FA; 
+    
+}
+.menu_1{/*contenedor de las targetas inmediatamente despues de la img circulara de enmedio /
+    padding-bottom: 1px;
+    /*margin-top: 40px;*/
+    background-color: #E6E6FA; 
+   
+}
+
+/*Estilo del texto o el contenedor 3*/
+.info{/*Estilo a las tarjetas superiores al las targetas del  menu */
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center; 
+    margin-left: 15px;
+    margin-right: 15px; 
+    width: 310px;
+    height: 300px;   
+}
+/*Estilo de parrafo dentro del contenedor info*/
+.info p {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 10PX;
+  
+font-family: 'Poiret One', cursive;
+}
+
+.historia2 {
+    text-align: center;
+   font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info img{   
+   width: 100%;
+    height: auto;
+    border-radius: 8%;
+}
+
+.info h1{
+   font-size: 14px;
+   margin-top: 5px;
+}
+
+/*Pie de pagina */ 
+
+
+/*Estilo del contenedor  para el formulario contacto*/
+.contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+/*Estilo al formulario*/
+.contacto form{/*Estilo al formulario*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto input{/*Estilo para los input del formulario*/
+    border-radius: 10px;
+    border: none;
+    background-color: #FFF5EE;
+    width: 80%;
+    margin: 6px;
+    height:30px;
+    text-align: center;
+}
+.contacto input:hover{/*Estilo al pasar el mause*/
+   background-color: #dcdcdc;   
+}
+input:focus{
+   border: solid 1px #6E6E6E;
+}
+/*Estilo del boton3 para enviar iinformacion en el formulario*/
+.btn3{/*Estilo del boton para enviar la informacion del formulario*/
+    width: 80%;
+    height: 30px;
+    background-color: #170B3B;
+    color: white;
+    border: none;
+    margin-bottom: 20px;    
+    border-radius:  10px;
+}
+/*estilo cuando pases el mause en el btn3 dentro del contenedor de contacto*/
+.btn3:hover{
+    background-color:#0B173B ;  
+}
+.btn3:link{
+ padding: 10px 20px;
+    box-shadow: 2px 3px 2px 2px #0B0B3B;
+    width: 75%;
+    height: 26px;
+    }
+/*..................................................*/
+/*lo ultimo del footer*/
+.navar-body2{ 
+    width: 100%;
+    background-color: black; 
+}
+
+footer a{ 
+    color: white;
+}
+
+
+
+
+.navar-body2{ 
+    font-family: 'Noto Serif', serif; 
+}
+
+/*Se programa para dispositivos de tableta*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media(min-width: 768px){/*esta llaves son extras*/
+    /*..................................................*/
+    .circuloss{/*se crea otro contenedor  "circuloss" que contenga a todos los  contenedores de circulos y se le da estilo*/
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: space-around;
+    }
+
+    .card3-imagen2{/*la imagen circular  sobrepuesta a otra img del menu  para dispositivo mas de 768*/
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10rem; 
+    z-index:999;
+    border: 1px solid black;
+    /*..................................................*/
+}
+   /* se reprograma el div de los circulos*/
+   .circulos{
+    width: 350px;
+    height: 350px;
+    margin:10px; 
+    border-radius: 50%;  
+    }
+ /* se reprograma la imagen del el div de los circulos*/
+    .circulos img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+/*..................................................*/
+/*se crea otro contenedor "tarjetass"que contenga a todos los contenedores de tarjetas y se le da estilo*/
+.tarjetass{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;/*cambiado*/
+    }
+/* se reprograma el div de las tarjeta*/
+.tarjeta{
+    width: 297px;
+    height: 350px;   
+}
+ /* se reprograma la imagen del el div de los tarjeta*/
+  .tarjeta img{
+    width: 100%;
+    height: 230px;    
+}
+/*..................................................*/
+/*Información de los textos*/
+.informacion{/*se crea otro contenedor  "informacion" que contenga a todos los  contenedores de info y se le da estilo*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* se reprograma el div de las info*/
+.info{
+   width: 300px;
+    height: 300px;
+    background-color:;
+}
+
+.historia2 {
+    text-align: center;
+   font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.info img{
+   width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+.info h1{
+   font-size: 15px;
+   margin-top: 20px;
+}
+
+.fondo{ /*fondo de inicio de paginas*/
+    height: 70vh; 
+}
+/*antes del fondo*/
+.fondo:before{
+    height: 70vh; 
+}
+
+.letrafondo{
+    font-size: 25px;  
+
+}
+
+.letrafondo2{
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+}
+
+}/*fin de la reprogramacion del media query de 768px se cierra la llave extra*/
+
+/*MEDIAS QUERY PARA DISPOSITIVO DE table*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media(min-width: 992px){
+    /*..................................................*/
+/* se reprograma el div de las tarjeta*/
+  .tarjeta{
+    width: 235px;
+    height: 345px; 
+    margin: 10px;  
+}
+/* se reprograma la imagen de el div de las tarjeta*/
+  .tarjeta img{
+    width: 100%;
+    height: 250px;    
+}
+
+ .card3-imagen2{/*la imagen circular  sobrepuesta a otra img del menu  para dispositivo mas de 768*/
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10rem; 
+    z-index:999;
+    border: 1px solid black;
+    /*..................................................*/
+}
+/* se reprograma el div de las info
+  .info{
+    width: 500px;
+    height:auto;
+}*/
+/* se reprograma el div de las tarjetass el contenedor que contiene a todos los contenedores de tarjeta*/
+.tarjetass{
+display: flex;
+flex-wrap: wrap;
+margin-left: 40px;/*para derjar margen a la izquierda*/
+margin-right: 40px;
+}
+/*..................................................*/
+.info{/*se reprograma el div de info*/
+ width: 400px;
+ height: 370px;
+ }
+
+ .historia2 {
+    text-align: center;
+   font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+
+}
+ /* se reprograma la img de el div de info*/
+.info img{
+    margin-top: 10px
+   width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.info h1{
+   font-size: 19px;
+   margin-top: 5px;
+}
+
+.info p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.fondo{ /*fondo de inicio de paginas*/
+    height: 80vh;
+     
+}
+/*antes del fondo*/
+.fondo:before{
+    height: 80vh;
+}
+
+.letrafondo{
+    font-size: 34px; 
+}
+
+.letrafondo2{
+    font-size: 25px;
+}
+
+}/*fin de la reprogramacion del media query de 992px se cierra la llave extra*/
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media(min-width: 1200px){/*para dispositivos mayores a 1200px*/
+/* se reprograma el div de las tarjeta*/
+/*..................................................*/
+.card3-imagen2{/*para el circulo de la img sobrepuesta a otra  imagen  sobre puesta para medidad de computadora*/
+    width: 21rem;
+    height: 21rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -12rem; 
+    z-index:999;
+    border: 1px solid black;
+    /*..................................................*/
+}
+.tarjeta{ /*se reprograma el div de targetas*/
+    width: 285px;
+    height: 330px; 
+    margin: 10px;  
+ }
+
+   .tarjeta img{/* tamaño de la img dentro de la clase targeta*/
+        width: 100%;
+        height: 218px; 
+}
+/* se reprograma el div de las tarjetass el contenedor que contiene a todos los contenedores de tarjeta*/
+.tarjetass{
+       /* se le deja margenes*/
+ margin-left: 40px;
+ margin-right: 40px;  
+ }
+ /*..................................................*/
+ /* se reprograma el div de info*/
+.info{
+ width: 500px;
+ height:400px;
+ }
+ /* se reprograma la img de el div de las tarjeta*/
+.info img{
+    margin-top: 10px;
+   width: 100%;
+    height: 300px;
+    border-radius: 10%;
+}
+
+    .info h1{
+   font-size: 25px;
+   margin-top: 5px;
+}
+.historia2 {
+    text-align: center;
+   font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info p {
+    text-align: center;
+    font-size: 22px;
+}
+.fondo{ /*fondo de inicio de paginas*/
+    height: 90vh;
+     
+}
+/*antes del fondo*/
+.fondo:before{
+    
+    height: 90vh;
+   
+}
+
+.letrafondo{
+
+    font-size: 40px;
+    
+}
+.letrafondo2{
+  
+    font-size: 30px;
+    
+}
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------para el area de reservar--------------------------------------------------------------------*/
+/*..................................................*/
+.reservar{   /*donde contiene todo lo de reservas*/
+   display: flex;
+    height: 300px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+ background-color:#ccc;
+ border-radius: 10px;
+}
+
+
+.reservar h2{
+    text-align: center;
+    font-size: 16px; 
+    padding: 10px; 
+}
+.resers{/*div para contener al div reser*/
+    align-items: center;
+    background-color:  #ccc;
+}
+/*estilo a titulo h3, y parrafo del contenedor dos*/
+.reser {/*donde se muestra el mensaje de los horarios de reserva*/
+    height: 75px;
+    width: 70%;
+      align-items: center;
+     margin-left: 25px;
+      background-color:  #ccc;
+}
+.reser p{
+   
+    font-size: 12px; 
+    padding-bottom: 4px; 
+}
+.llamar{
+    background-color: #ccc;
+     align-items: center;
+      flex-direction: column;
+      display: flex;
+      padding:5px;
+}
+.boton1{
+     margin-top: 25px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    background-color:#B0C4DE;
+    width: 250px;
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media(min-width: 768px){
+.resers{/* se reprograma el div resers*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+.reservar h2{/*se reprograma el h2 dentro del div h2*/
+    text-align: center;
+    font-size: 25px; 
+    padding: 6px; 
+
+}
+.reser { /* se reprograma  el div reser*/  
+    width: 54%;       
+}
+.reser p{
+    text-align: left;
+    font-size: 14px; 
+  padding: 15px;
+}
+}
+@media(min-width: 900px){
+
+    .reser p{
+    text-align: left;
+    font-size: 17px; 
+  padding: 15px;
+}
+    }
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------en relacion a las targetas del index pagina principal efecto hover cambio de imagen-----------------------------------*/
+/*..................................................*/
+.otra {/* tamaño de texto la imagen de historia en el index*/
+
+   /*height: 80vh;
+   width: 350px;***/
+}
+
+.experiencia
+{/* tamaño de texto la imagen de historia en el index*/
+
+ position: relative;
+    color:white ;
+    font-size: 20px;
+    text-align: center;
+   
+}
+.otra p{/* tamaño de texto la imagen de historia*/
+       color:white ;
+    font-size: 15px;
+    text-align: center;  
+      position: relative;
+}
+
+
+.text-section{  
+    display: flex; 
+    text-align: center;
+    color:white ;
+    font-size: 23px;  
+    flex-direction: row;
+}  
+ 
+
+ /*.tarjess{  
+    background: rgb(255,255,255); 
+    background-color: red;
+   /* background-size: 150%;
+    margin-top: -20px;
+}*/
+
+
+
+.contenedor1{/*    contenedor en  las que estan targetas que cambia la img al pasar el mause en el index*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ background-color:#E6E6FA;
+    padding-bottom: 20px;
+     
+}
+/*estilo a titulo h2,del contenedor uno*/
+.contenedor1 h2{
+    text-align: center;
+    font-size: 40px; 
+    padding-bottom: 20px; 
+}
+/*estilo a titulo h3, y parrafo del contenedor dos*/
+.contenedor1 h3, p{
+    text-align: center;
+    margin-top: 10px;  
+}
+/*Estilo a las tarjetas*/
+.tarjetar{ /*Estilo del div tarjetar  las del index principal*/
+    width: 260px;
+    height: 340px;
+    margin-top: 20px;
+    background-image: url(../img/fondo/restaurante1.png);
+ justify-content:  center;
+    align-items: center; 
+    margin:10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    border:solid  1px black;
+    background-color: white;
+     border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);/*una sobra*/
+    cursor: default;
+    transition: all 400ms ease;/*se mueve todo el contonedor de  targeta*/
+}
+.tarjetar:before{/*Estilo de las targetas antes, es como una opacividad*/
+    content: "";
+    width: 260px;
+    height: 344px;
+     margin-top: 20px;
+     border-radius: 16px;
+      display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    opacity: 0.3;
+}
+.tarjetar h3 { 
+    position: relative;
+    color:white ;
+    font-size: 28px;
+    text-align: center;
+}
+.tarjetar h4 { 
+    position: relative;
+    color:white ;
+    font-size: 20px;
+    text-align: center;
+}
+.tarjetar p{
+    color:white ;
+    font-size: 17px;
+    text-align: center;  
+      position: relative;
+      font-family: 'Poiret One', cursive;
+}
+/*estilo a la imagen del contenedor de targeta*/
+/*es cuando pasas el mause en el contonedor de la atargeta*/
+.tarjetar:hover {/*cambia la imagen*/
+        box-shadow: 5px 5px 20px rgba(19,19,209,0.6);
+        transform: translateY(-2%);/*se mueve hacia arriba en y*/
+         background-image: url(../img/grupos.jpg);
+   }
+/*para cambiar a la etiqueta a */
+.tarjetar a {
+     position: relative;
+    text-decoration: none;/*se le quita el subrayado*/
+    color:white;
+    font-size: 30px;
+    font-family: 'Poiret One', cursive;
+
+}
+/*+++++++++++++++++++++++++++Cambio de medidad++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media(min-width: 768px){
+    /*..................................................*/
+
+.otra {/* tamaño de texto la imagen de historia*/
+/*
+   height: 80vh;
+   width: 500px;*/
+}
+
+.otra p{/* tamaño de texto la imagen de historia*/
+      
+    font-size: 17px;
+      text-align: center;  
+      position: relative;
+   
+}
+
+.otra a{
+        
+    }
+
+.targetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+/* se reprograma el div de las tarjeta*/
+.tarjetar{
+    width: 310px;
+    height: 350px;   
+}
+.tarjetar:before{
+    content: "";
+    width: 310px;
+    height: 350px;
+}
+ /* se reprograma la imagen del el div de los tarjeta*/
+  .tarjetar img{
+    width: 100%;
+    height: 250px;    
+}
+}
+
+@media(min-width: 992px){
+/* se reprograma el div de las tarjeta*/
+
+.otra {/* tamaño de texto la imagen de historia*/
+
+   /*height: 80vh;
+   width: 700px;*/
+}
+
+.otra p{/* tamaño de texto la imagen de historia*/
+      
+    font-size: 22px;
+    text-align: center;  
+      position: relative;
+}
+  .tarjetar{
+    width: 280px;
+    height: 345px; 
+    margin: 10px;  
+}
+
+.tarjetar:before{
+    content: "";
+    width: 280px;
+    height: 345px;    
+}
+/* se reprograma la imagen de el div de las tarjeta*/
+  .tarjetar img{
+    width: 100%;
+    height: 250px; 
+}
+/* se reprograma el div de las info
+  .info{
+    width: 500px;
+    height:auto;
+}*/
+/* se reprograma el div de las tarjetass el contenedor que contiene a todos los contenedores de tarjeta*/
+.targetas{
+display: flex;
+flex-wrap: wrap;
+margin-left: 40px;/*para derjar margen a la izquierda*/
+margin-right: 40px;
+}
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media(min-width: 1200px){/*para dispositivos mayores a 1200px*/
+/* se reprograma el div de las tarjeta*/
+.otra {/* tamaño de texto la imagen de historia*/
+ 
+   /*height: 80vh;
+   width: 1000px;
+ 
+   text-align: center; */
+
+}
+
+.otra p{/* tamaño de texto la imagen de historia*/
+        text-align: center;  
+      position: relative;
+    font-size: 28px;
+
+   
+}
+
+.tarjetar{
+    width: 340px;
+    height: 350px; 
+    margin: 10px;  
+ }
+ .tarjetar:before{
+    content: "";
+    width: 340px;
+    height: 345px;
+    margin: 10px;  
+}
+.nosoot
+   {
+  background-color: #E6E6FA;
+}
+.contenosotros{
+    width: auto;
+    height: 450px;
+    background-image: url(../img/restaurante1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+.historia {
+      margin-top: 152px;
+}
+.historia1{
+         font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+.boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+}
+  .sesgoabajo { 
+     z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent red transparent;}
+/*..................................................*/
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+     background-color: 
+}
+
+.parrafo{
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+
+}
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;}
+.slogan   {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color: rgb(24, 16, 16);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------- estilo parael archivo de nosotros-----------------------------------*/
+/*..................................................*/
+
+.nosoot
+   {
+  background-color: #E6E6FA;
+}
+.contenosotros{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/restaurante1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+.nosotros h1{
+      margin-top: 152px;
+}
+.nosotros h3{
+         font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+.boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 2px solid red;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    position: relative;
+
+}
+  .sesgoabajo { 
+     z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #E6E6FA transparent;}
+/*..................................................*/
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+     background-color: 
+}
+
+.contenedor p{
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+
+}
+.contenedor h2{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;}
+.contenedor h3   {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color: rgb(24, 16, 16);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+/*+++++++++++++++++++++++++++Cambio de medidad++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width:610px) {
+ .nosotros {
+    }
+    .nosotros h1{
+    font-size: 45px;
+    }
+.nosotros h3{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+.sesgoabajo { 
+     z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 5;
+    border-width: 3 0 25vh 100vw;
+   }
+}
+/*+++++++++++++++++++++++++++Cambio de medidad++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width:380px) {
+    .nosotros h1 {
+        font-size: 55px;
+    }
+    .nosotros h3{
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
+    .contenedor h2 {
+        font-size: 35px;
+    }
+    
+  .contenedor h3 {
+        font-size: 15px;
+    }
+   
+   .sesgoabajo { 
+     z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 5;
+    border-width: 0 0 20vh 100vw;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
